@@ -1,5 +1,5 @@
 import React from "react";
-import { CloudinaryContext, Transformation, Image } from "cloudinary-react";
+// import { CloudinaryContext, Transformation, Image } from "cloudinary-react";
 import styles from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import { webAuth } from "../config/auth";
@@ -42,7 +42,7 @@ export default function Coupon() {
         Coupon: {Math.floor(Math.random() * (67646676 - 6746 + 1)) + 74664}
       </h1>
 
-      <CloudinaryContext cloudName="dtgbzmpca">
+      {/* <CloudinaryContext cloudName="dtgbzmpca">
         <Image publicId="v1633726853/tamanna-rumee-rOBRka7Q12U-unsplash.jpg">
           <Transformation
             crop="scale"
@@ -52,7 +52,7 @@ export default function Coupon() {
             responsive_placeholder="blank"
           />
         </Image>
-      </CloudinaryContext>
+      </CloudinaryContext> */}
     </div>
   );
 }
